@@ -1,0 +1,15 @@
+.nav-center {
+    text-align: center;
+    padding-top: 50px;
+}
+
+ul.nav {
+    display: inline-block;
+}
+li {
+    display: inline
+}
+
+a {
+    float: left
+}
