@@ -2,8 +2,107 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70f69837-e0f6-46da-bc9c-695bb51e5b24" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/TrainModel/TrainModel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/TrainModel/TrainModel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/descriptors/faces.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/face.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/face.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/readData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/readData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/readData.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ImageInput/ImageInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ImageInput/ImageInput.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavPills/NavPills.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavPills/NavPills.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/femke.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/femke1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/femke10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/femke2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/femke3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/femke4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/femke5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/femke6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/femke7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/femke8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/femke9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/frank.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/frank1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/frank10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/frank2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/frank3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/frank4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/frank5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/frank6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/frank7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/frank8.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/frank9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/lowie.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/lowie1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/lowie10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/lowie2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/lowie3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/lowie4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/lowie5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/lowie6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/lowie7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/lowie8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/lowie9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/nancy.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/nancy1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/nancy10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/nancy2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/nancy3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/nancy4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/nancy5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/nancy6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/nancy7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/nancy8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/nancy9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/olivia.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/olivia1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/olivia10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/olivia2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/olivia3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/olivia4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/olivia5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/olivia6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/olivia7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/olivia8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/olivia9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/sam.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/sam1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/sam10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/sam2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/sam3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/sam4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/sam5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/sam6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/sam7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/sam8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/sam9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/simonne.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/simonne1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/simonne10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/simonne2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/simonne3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/simonne4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/simonne5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/simonne6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/simonne7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/simonne9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/test/http___3.bp.blogspot.com_-TZQezJVPjDs_VmEz3-1TF1I_AAAAAAAACLc_AgkkWuTmNao_s1600_THUIS.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/waldek.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/waldek1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/waldek10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/waldek2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/waldek3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/waldek4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/waldek5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/waldek6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/waldek7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/waldek8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataset/waldek9.jpg" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -15,22 +114,57 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/ImageInput/ImageInput.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="22" column="57" selection-start-line="22" selection-start-column="57" selection-end-line="22" selection-end-column="57" />
+            <state relative-caret-position="187">
+              <caret line="111" column="54" selection-start-line="111" selection-start-column="54" selection-end-line="111" selection-end-column="54" />
               <folding>
-                <element signature="e#0#39#0" expanded="true" />
-                <element signature="e#189#253#0" />
-                <element signature="e#445#514#0" />
-                <element signature="e#553#641#0" />
-                <element signature="e#701#859#0" />
-                <element signature="e#972#1168#0" />
-                <element signature="e#1194#1243#0" />
-                <element signature="e#100#252#0" />
+                <element signature="e#0#41#0" expanded="true" />
+                <element signature="e#660#823#0" />
+                <element signature="e#1533#1729#0" />
+                <element signature="e#1755#1804#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/TrainModel/TrainModel.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/TrainModel/TrainModel.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/NavPills/NavPills.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="94" selection-start-line="12" selection-start-column="94" selection-end-line="12" selection-end-column="94" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="55" selection-start-line="18" selection-start-column="55" selection-end-line="18" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -38,8 +172,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Home/Home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="272">
+              <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -47,25 +181,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/api/face.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+            <state relative-caret-position="136">
+              <caret line="32" column="47" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="47" />
               <folding>
                 <element signature="n#!!block;n#loadModels#0" />
-                <element signature="n#!!block;n#getFaceDescriptor#0" />
                 <element signature="n#!!block;n#getFullFaceDescription#0" />
+                <element signature="n#!!block;n#createMatcher#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/api/readData.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="2" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -73,10 +198,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+            <state relative-caret-position="207">
+              <caret line="15" column="61" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="61" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -86,7 +222,7 @@
         <entry file="file://$PROJECT_DIR$/src/components/VideoInput/VideoInput.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+              <caret line="10" column="1" selection-end-line="10" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -96,8 +232,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -109,17 +245,20 @@
       <list>
         <option value="$PROJECT_DIR$/src/views/Home.js" />
         <option value="$PROJECT_DIR$/src/App.css" />
-        <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/components/VideoInput/VideoInput.js" />
-        <option value="$PROJECT_DIR$/src/components/NavPills/NavPills.js" />
         <option value="$PROJECT_DIR$/src/components/NavPills/NavPills.css" />
         <option value="$PROJECT_DIR$/src/App.js" />
-        <option value="$PROJECT_DIR$/src/components/Home/Home.js" />
         <option value="$PROJECT_DIR$/src/api/computeFaceDescriptors.js" />
         <option value="$PROJECT_DIR$/src/utils/readData.js" />
-        <option value="$PROJECT_DIR$/src/components/ImageInput/ImageInput.js" />
         <option value="$PROJECT_DIR$/src/api/readData.js" />
         <option value="$PROJECT_DIR$/src/api/face.js" />
+        <option value="$PROJECT_DIR$/src/descriptors/faces.json" />
+        <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/src/components/ImageInput/ImageInput.js" />
+        <option value="$PROJECT_DIR$/src/components/NavPills/NavPills.js" />
+        <option value="$PROJECT_DIR$/src/components/Home/Home.js" />
+        <option value="$PROJECT_DIR$/src/components/TrainModel/TrainModel.js" />
+        <option value="$PROJECT_DIR$/src/components/TrainModel/TrainModel.css" />
       </list>
     </option>
   </component>
@@ -134,6 +273,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -141,18 +281,54 @@
               <item name="react-face-recognition" type="b2602c69:ProjectViewProjectNode" />
               <item name="react-face-recognition" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="react-face-recognition" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-face-recognition" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-face-recognition" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-face-recognition" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-face-recognition" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-face-recognition" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-face-recognition" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-face-recognition" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="TrainModel" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-face-recognition" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-face-recognition" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="VideoInput" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-face-recognition" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-face-recognition" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="descriptors" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../face-emotion-recognition" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/TrainModel" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -163,7 +339,13 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\School\2018-2019\CapitaSelecta\react-face-recognition\src\components\TrainModel" />
+      <recent name="D:\School\2018-2019\CapitaSelecta\react-face-recognition\public\models" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\School\2018-2019\CapitaSelecta\react-face-recognition\public" />
+      <recent name="D:\School\2018-2019\CapitaSelecta\react-face-recognition\public\models" />
       <recent name="D:\School\2018-2019\CapitaSelecta\react-face-recognition\src\api" />
       <recent name="D:\School\2018-2019\CapitaSelecta\react-face-recognition\src" />
       <recent name="D:\School\2018-2019\CapitaSelecta\react-face-recognition\src\components\Home" />
@@ -191,7 +373,7 @@
     <configuration name="face.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="face.js" working-dir="$PROJECT_DIR$/src/api">
       <method v="2" />
     </configuration>
-    <configuration name="readData.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/api/readData.js" working-dir="$PROJECT_DIR$/src/utils">
+    <configuration name="readData.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/api/readData.js" working-dir="$PROJECT_DIR$/src/descriptors">
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -214,11 +396,13 @@
       <option name="presentableId" value="Default" />
       <updated>1556032028859</updated>
       <workItem from="1556032030029" duration="13360000" />
+      <workItem from="1556123652343" duration="725000" />
+      <workItem from="1556130220196" duration="3394000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14308000" />
+    <option name="totallyTimeSpent" value="18427000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -233,7 +417,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14606741" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19101124" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -247,7 +431,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Inspection Results" order="9" weight="0.3286119" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49306014" weight="0.2776204" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49306014" visible="true" weight="0.2776204" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50363517" side_tool="true" weight="0.32577905" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -283,7 +467,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/api/face.js</url>
-          <line>50</line>
+          <line>51</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
@@ -297,16 +481,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/favicon.ico">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/NavPills/NavPills.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -314,12 +488,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/NavPills/NavPills.js">
+    <entry file="file://$PROJECT_DIR$/src/api/computeFaceDescriptors.js" />
+    <entry file="file://$PROJECT_DIR$/src/api/readData.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+        <state>
+          <caret selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/models/face_recognition_model-weights_manifest.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" lean-forward="true" selection-start-column="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/descriptors/faces.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="537880">
+          <caret line="31640" column="3" selection-start-line="31640" selection-start-column="3" selection-end-line="31640" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/favicon.ico">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/favicon.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="55" selection-start-line="18" selection-start-column="55" selection-end-line="18" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/api/face.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="32" column="47" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="47" />
+          <folding>
+            <element signature="n#!!block;n#loadModels#0" />
+            <element signature="n#!!block;n#getFullFaceDescription#0" />
+            <element signature="n#!!block;n#createMatcher#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="15" column="61" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="61" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -327,25 +557,24 @@
     <entry file="file://$PROJECT_DIR$/src/components/VideoInput/VideoInput.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <caret line="10" column="1" selection-end-line="10" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/api/computeFaceDescriptors.js" />
-    <entry file="file://$PROJECT_DIR$/src/App.js">
+    <entry file="file://$PROJECT_DIR$/src/components/NavPills/NavPills.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        <state relative-caret-position="204">
+          <caret line="12" column="94" selection-start-line="12" selection-start-column="94" selection-end-line="12" selection-end-column="94" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Home/Home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="272">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -354,37 +583,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ImageInput/ImageInput.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="22" column="57" selection-start-line="22" selection-start-column="57" selection-end-line="22" selection-end-column="57" />
+        <state relative-caret-position="187">
+          <caret line="111" column="54" selection-start-line="111" selection-start-column="54" selection-end-line="111" selection-end-column="54" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#189#253#0" />
-            <element signature="e#445#514#0" />
-            <element signature="e#553#641#0" />
-            <element signature="e#701#859#0" />
-            <element signature="e#972#1168#0" />
-            <element signature="e#1194#1243#0" />
-            <element signature="e#100#252#0" />
+            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#660#823#0" />
+            <element signature="e#1533#1729#0" />
+            <element signature="e#1755#1804#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/api/readData.js">
+    <entry file="file://$PROJECT_DIR$/src/components/TrainModel/TrainModel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="2" selection-end-column="39" />
+        <state relative-caret-position="34">
+          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/api/face.js">
+    <entry file="file://$PROJECT_DIR$/src/components/TrainModel/TrainModel.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-          <folding>
-            <element signature="n#!!block;n#loadModels#0" />
-            <element signature="n#!!block;n#getFaceDescriptor#0" />
-            <element signature="n#!!block;n#getFullFaceDescription#0" />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
         </state>
       </provider>
     </entry>

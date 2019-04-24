@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 import NavPills from "../NavPills/NavPills";
 import ImageInput from "../ImageInput/ImageInput";
 import VideoInput from "../VideoInput/VideoInput";
+import TrainModel from "../TrainModel/TrainModel";
 
 export default class Home extends Component {
     render() {
@@ -13,6 +14,7 @@ export default class Home extends Component {
                 <div className="tab-content">
                     <ImageInput/>
                     <VideoInput/>
+                    <TrainModel/>
                 </div>
             </div>
         );

@@ -9,6 +9,7 @@
     "history": "latest",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-dropzone": "^10.1.4",
     "react-router-dom": "^5.0.0",
     "react-scripts": "3.0.0"
   },

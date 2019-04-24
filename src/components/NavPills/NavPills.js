@@ -8,7 +8,8 @@ class NavPills extends React.Component {
             <div className="container">
                 <div className="nav-center">
                     <ul className="nav nav-pills">
-                        <li className="active"><Link data-toggle="pill" to="#image-input">Image input</Link></li>
+                        <li className="active"><Link data-toggle="pill" to="#training-input">Train model</Link></li>
+                        <li><Link data-toggle="pill" to="#image-input">Image input</Link></li>
                         <li><Link data-toggle="pill" to="#video-input">Video input</Link></li>
                     </ul>
                 </div>
