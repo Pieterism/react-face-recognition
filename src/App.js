@@ -5,6 +5,7 @@ import './App.css';
 
 import Home from './components/Home/Home';
 import ImageInput from './components/ImageInput/ImageInput'
+import TrainModel from "./components/TrainModel/TrainModel";
 
 
 class App extends Component {
@@ -15,6 +16,7 @@ class App extends Component {
                     <div className=" route container-fluid text-center">
                         <Route exact path="/" component={Home}/>
                         <Route exact path="/image" component={ImageInput} />
+                        <Route exact path="/train" component={TrainModel} />
                     </div>
                 </Router>
             </div>

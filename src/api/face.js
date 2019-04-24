@@ -30,9 +30,7 @@ export async function getSingleFaceDescription(blob) {
 
     // detect all faces and generate full description from image
     // including landmark and descriptor of each face
-    let descriptor = await faceapi
-        .detectSingleFace(img)
-        .withFaceDescriptors();
+    let descriptor = await faceapi.detectSingleFace(img).withFaceExpressions().withFaceLandmarks().withFaceDescriptor();
 
     return descriptor;
 }
