@@ -15,6 +15,18 @@ const imagesByClass = labels.map(c =>
         .map(fp => fr.loadImage(fp))
 );
 
+//TODO: JSON MAKEN MET NAAM EN DESCRIPTORS
+imagesByClass.forEach(imageClass => {
+    let obj = {
+        name: labels[imagesByClass.indexOf(imageClass)],
+        images: [],
+        descriptors: []
+    }
+
+    console.log(obj.name)
+})
+
+
 
 
 
