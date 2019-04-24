@@ -2,15 +2,12 @@ import React, {Component} from 'react';
 import {withRouter} from 'react-router-dom';
 import {loadModels, getFullFaceDescription, createMatcher} from '../../api/face';
 
-// Import image to test API
-const testImg = require('../../data/test.jpg');
-
 // Import face profile
 const JSON_PROFILE = require('../../descriptors/faces.json');
 
 // Initial State
 const INIT_STATE = {
-    imageURL: testImg,
+    imageURL: null,
     fullDesc: null,
     detections: null,
     descriptors: null,
@@ -21,10 +18,6 @@ class ImageInput extends Component {
     constructor(props) {
         super(props);
         this.state = {...INIT_STATE, faceMatcher: null};
-    }
-
-    loadDescriptors = async () => {
-
     }
 
     componentWillMount = async () => {
