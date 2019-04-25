@@ -23,14 +23,14 @@ export default class TrainModel extends Component {
         acceptedFiles.forEach(__filename => {
             this.handleImage(__filename);
         })
-    }
+    };
 
     handleImage = async (__filename) => {
         let imageURL = URL.createObjectURL(__filename);
         await getFullFaceDescription(imageURL).then(fullDesc => {
             if (!!fullDesc) {
                 this.setState({
-                    images: {descriptor: (fullDesc.map(fd => fd.descriptor))}
+                    images: {label :(__filename.name),descriptor: (fullDesc.map(fd => fd.descriptor))}
                 });
             }
         });
@@ -50,8 +50,8 @@ export default class TrainModel extends Component {
                             </div>
                             <ul className="list-group mt-2">
                                 {acceptedFiles.length > 0 && acceptedFiles.map(acceptedFile => (
-                                    <li className="list-group-item list-group-item-success">
-                                        {acceptedFile.name}
+                                    <li className="list-group-item list-group-item-success" key={acceptedFile.name} >
+                                        {(acceptedFile.name)}
                                     </li>
                                 ))}
                             </ul>
