@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70f69837-e0f6-46da-bc9c-695bb51e5b24" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/api/face.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/face.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/TrainModel/TrainModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TrainModel/TrainModel.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -47,12 +48,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/TrainModel/TrainModel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="43" column="79" selection-start-line="43" selection-start-column="79" selection-end-line="43" selection-end-column="79" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-                <element signature="e#678#876#0" />
-              </folding>
+            <state relative-caret-position="34">
+              <caret line="2" column="50" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -60,8 +57,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/api/face.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="41" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="41" />
+            <state relative-caret-position="34">
+              <caret line="2" column="90" selection-start-line="2" selection-start-column="90" selection-end-line="2" selection-end-column="90" />
               <folding>
                 <element signature="n#!!block;n#createMatcher#0" />
               </folding>
@@ -109,9 +106,9 @@
         <option value="$PROJECT_DIR$/src/components/NavPills/NavPills.js" />
         <option value="$PROJECT_DIR$/src/components/Home/Home.js" />
         <option value="$PROJECT_DIR$/src/components/TrainModel/TrainModel.css" />
-        <option value="$PROJECT_DIR$/src/api/face.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/components/ImageInput/ImageInput.js" />
+        <option value="$PROJECT_DIR$/src/api/face.js" />
         <option value="$PROJECT_DIR$/src/components/TrainModel/TrainModel.js" />
       </list>
     </option>
@@ -139,6 +136,12 @@
               <item name="react-face-recognition" type="b2602c69:ProjectViewProjectNode" />
               <item name="react-face-recognition" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-face-recognition" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-face-recognition" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -224,7 +227,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28685000" />
+    <option name="totallyTimeSpent" value="30144000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -289,25 +292,22 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/api/face.js</url>
-          <line>57</line>
+          <line>59</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/ImageInput/ImageInput.js</url>
           <line>28</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/api/face.js</url>
-          <line>3</line>
-          <properties lambdaOrdinal="-1" />
+          <line>5</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/TrainModel/TrainModel.js</url>
           <line>32</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
@@ -329,13 +329,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/api/computeFaceDescriptors.js" />
-    <entry file="file://$PROJECT_DIR$/src/api/readData.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/api/readData.js" />
     <entry file="file://$PROJECT_DIR$/public/models/face_recognition_model-weights_manifest.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -350,9 +344,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/favicon.ico">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/public/favicon.ico" />
     <entry file="file://$PROJECT_DIR$/public/favicon.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -433,8 +425,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/api/face.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="41" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="41" />
+        <state relative-caret-position="34">
+          <caret line="2" column="90" selection-start-line="2" selection-start-column="90" selection-end-line="2" selection-end-column="90" />
           <folding>
             <element signature="n#!!block;n#createMatcher#0" />
           </folding>
@@ -443,12 +435,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/TrainModel/TrainModel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="43" column="79" selection-start-line="43" selection-start-column="79" selection-end-line="43" selection-end-column="79" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#678#876#0" />
-          </folding>
+        <state relative-caret-position="34">
+          <caret line="2" column="50" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
         </state>
       </provider>
     </entry>

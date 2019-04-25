@@ -1,5 +1,7 @@
 import * as faceapi from 'face-api.js';
 
+export const labels = ["femke","frank","lowie","nancy","olivia","sam","simonne","waldek"];
+
 // Load models and weights
 export async function loadModels() {
     const MODEL_URL = process.env.PUBLIC_URL + '/models';

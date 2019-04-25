@@ -1,13 +1,16 @@
 import React, {Component} from 'react';
-import Dropzone, {useDropzone} from 'react-dropzone';
-import {getFullFaceDescription, loadModels} from '../../api/face';
+import Dropzone from 'react-dropzone';
+import {getFullFaceDescription, loadModels, labels} from '../../api/face';
 import './TrainModel.css'
 
 export default class TrainModel extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            descriptors: []
+            images:{
+                label: null,
+                descriptors: []
+            }
         };
     }
 
@@ -18,22 +21,20 @@ export default class TrainModel extends Component {
     //TODO: Write to JSON file
     onDrop = (acceptedFiles) => {
         acceptedFiles.forEach(__filename => {
-            let imageURL = URL.createObjectURL(__filename);
-            this.handleImage(imageURL);
-            console.log(imageURL);
+            this.handleImage(__filename);
         })
-
-        console.log(acceptedFiles);
     }
 
-    handleImage = async (image) => {
-        await getFullFaceDescription(image).then(fullDesc => {
+    handleImage = async (__filename) => {
+        let imageURL = URL.createObjectURL(__filename);
+        await getFullFaceDescription(imageURL).then(fullDesc => {
             if (!!fullDesc) {
                 this.setState({
-                    descriptors: this.state.descriptors.concat(fullDesc.map(fd => fd.descriptor))
+                    images: {descriptor: (fullDesc.map(fd => fd.descriptor))}
                 });
             }
         });
+        console.log(this.state);
     };
 
     render() {
