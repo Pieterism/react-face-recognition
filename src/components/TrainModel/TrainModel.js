@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Dropzone from 'react-dropzone';
+import Dropzone, {useDropzone} from 'react-dropzone';
 import {getFullFaceDescription, loadModels} from '../../api/face';
 import './TrainModel.css'
 
@@ -38,14 +38,22 @@ export default class TrainModel extends Component {
 
     render() {
         return (
+
             <div id="training-input" className="tab-pane  active">
                 <Dropzone onDrop={this.onDrop} multiple accept="image/*">
-                    {({getRootProps, getInputProps, isDragActive}) => (
+                    {({getRootProps, getInputProps, isDragActive, acceptedFiles}) => (
                         <section>
                             <div className="dropzone" {...getRootProps()}>
                                 <input {...getInputProps()} />
                                 <h4>{isDragActive ? "Drop it like it's hot!" : "Drag 'n' drop some files here, or click to select files used to train the model"}</h4>
                             </div>
+                            <ul className="list-group mt-2">
+                                {acceptedFiles.length > 0 && acceptedFiles.map(acceptedFile => (
+                                    <li className="list-group-item list-group-item-success">
+                                        {acceptedFile.name}
+                                    </li>
+                                ))}
+                            </ul>
                         </section>
                     )}
                 </Dropzone>
