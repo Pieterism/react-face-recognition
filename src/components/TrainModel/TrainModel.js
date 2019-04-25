@@ -7,7 +7,7 @@ export default class TrainModel extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            images:{
+            images: {
                 label: null,
                 descriptors: []
             }
@@ -21,17 +21,23 @@ export default class TrainModel extends Component {
     //TODO: Write to JSON file
     onDrop = (acceptedFiles) => {
         acceptedFiles.forEach(__filename => {
+            console.log(__filename);
             this.handleImage(__filename);
         })
+        console.log(acceptedFiles);
     };
 
     handleImage = async (__filename) => {
         let imageURL = URL.createObjectURL(__filename);
         await getFullFaceDescription(imageURL).then(fullDesc => {
             if (!!fullDesc) {
-                this.setState({
-                    images: {label :(__filename.name),descriptor: (fullDesc.map(fd => fd.descriptor))}
-                });
+                labels.forEach(label => {
+                    if (__filename.name.includes(label)) {
+                        this.setState({
+                            images: {label: (label), descriptor: (fullDesc.map(fd => fd.descriptor))}
+                        });
+                    }
+                })
             }
         });
         console.log(this.state);
@@ -50,7 +56,7 @@ export default class TrainModel extends Component {
                             </div>
                             <ul className="list-group mt-2">
                                 {acceptedFiles.length > 0 && acceptedFiles.map(acceptedFile => (
-                                    <li className="list-group-item list-group-item-success" key={acceptedFile.name} >
+                                    <li className="list-group-item list-group-item-success" key={acceptedFile.name}>
                                         {(acceptedFile.name)}
                                     </li>
                                 ))}
