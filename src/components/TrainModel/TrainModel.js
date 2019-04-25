@@ -2,52 +2,71 @@ import React, {Component} from 'react';
 import Dropzone from 'react-dropzone';
 import {getFullFaceDescription, loadModels, labels} from '../../api/face';
 import './TrainModel.css'
+import {restElement} from "@babel/types";
 
 export default class TrainModel extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            images: {
-                label: null,
-                descriptors: []
-            }
+            images: []
         };
     }
 
     componentWillMount = async () => {
-        await loadModels();
+        await loadModels().then(res => console.log('models loaded'))
     };
 
-    //TODO: Write to JSON file
-    onDrop = (acceptedFiles) => {
-        acceptedFiles.forEach(__filename => {
-            console.log(__filename);
-            this.handleImage(__filename);
-        })
-        console.log(acceptedFiles);
+    readInTrainingData = async (acceptedFiles) => {
+        let res = [];
+
+        await this.asyncForEach(acceptedFiles, async (file) => {
+            await this.handleImage(file).then(result => {
+                res.push(result);
+            })
+        });
+        console.log(res);
+    };
+
+    asyncForEach = async (array, callback) => {
+        for (let index = 0; index < array.length; index++) {
+            await callback(array[index], index, array);
+        }
+    };
+
+    onDrop = async (acceptedFiles) => {
+        this.readInTrainingData(acceptedFiles);
+
+        /*let result = [];
+        await acceptedFiles.forEach(async __filename => {
+            this.handleImage(__filename).then(res => {
+                result.push(res);
+
+            }).then(res => {
+                console.log(result);
+            })
+        })*/
     };
 
     handleImage = async (__filename) => {
+        let image = null;
         let imageURL = URL.createObjectURL(__filename);
         await getFullFaceDescription(imageURL).then(fullDesc => {
             if (!!fullDesc) {
-                labels.forEach(label => {
+                for (const label of labels) {
                     if (__filename.name.includes(label)) {
-                        this.setState({
-                            images: {label: (label), descriptor: (fullDesc.map(fd => fd.descriptor))}
-                        });
+                        image = {label: (label), descriptor: (fullDesc.map(fd => fd.descriptor))};
                     }
-                })
+                }
             }
         });
-        console.log(this.state);
+        return image;
     };
 
     render() {
         return (
 
             <div id="training-input" className="tab-pane  active">
-                <Dropzone onDrop={this.onDrop} multiple accept="image/*">
+                <Dropzone onDropAccepted={this.onDrop} multiple accept="image/*">
                     {({getRootProps, getInputProps, isDragActive, acceptedFiles}) => (
                         <section>
                             <div className="dropzone" {...getRootProps()}>
