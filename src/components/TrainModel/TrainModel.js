@@ -32,11 +32,16 @@ class TrainModel extends Component {
         let classifiedData = await this.classifyImages(imagesByClass);
         await this.exportJSON(classifiedData);
 
-        console.log(classifiedData);
         this.setState({
             data: classifiedData
         })
+
+        console.log(classifiedData);
     };
+
+
+
+
 
     classifyImages = async (imagesByClass) => {
         let data = [];

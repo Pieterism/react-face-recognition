@@ -12,9 +12,9 @@ export default class Home extends Component {
                 <h1>React Face Recognition</h1>
                 <NavPills/>
                 <div className="tab-content">
-                    <ImageInput/>
+                    <ImageInput />
                     <VideoInput/>
-                    <TrainModel/>
+                    <TrainModel />
                 </div>
             </div>
         );
