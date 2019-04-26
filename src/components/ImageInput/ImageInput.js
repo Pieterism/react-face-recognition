@@ -7,7 +7,7 @@ const JSON_PROFILE = require('../../descriptors/faces.json');
 
 // Initial State
 const INIT_STATE = {
-    imageURL: null,
+    imageURL: "https://cdn4.iconfinder.com/data/icons/social-communication/142/add_photo-512.png",
     fullDesc: null,
     detections: null,
     descriptors: null,
@@ -102,20 +102,20 @@ class ImageInput extends Component {
         }
 
         return (
-            <div id="image-input" className="tab-pane fade">
-                <input
-                    id="myFileUpload"
-                    type="file"
-                    onChange={this.handleFileChange}
-                    accept=".jpg, .jpeg, .png"
-                />
-                <div style={{position: 'relative'}}>
-                    <div style={{position: 'absolute'}}>
-                        <img src={imageURL} alt="imageURL"/>
+            <div id="image-input" className="tab-pane fade text-center">
+                    <input
+                        id="myFileUpload"
+                        type="file"
+                        onChange={this.handleFileChange}
+                        accept=".jpg, .jpeg, .png"
+                    />
+                    <div style={{position: 'relative'}}>
+                        <div style={{position: 'absolute'}}>
+                            <img src={imageURL} alt="imageURL"/>
+                        </div>
+                        {!!drawBox ? drawBox : null}
                     </div>
-                    {!!drawBox ? drawBox : null}
                 </div>
-            </div>
         );
     }
 }

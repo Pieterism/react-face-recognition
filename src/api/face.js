@@ -24,15 +24,6 @@ export async function getFullFaceDescription(blob) {
         .withFaceDescriptors();
 }
 
-export async function getSingleFaceDescription(blob) {
-    // fetch image to api
-    let img = await faceapi.fetchImage(blob);
-
-    // detect all faces and generate full description from image
-    // including landmark and descriptor of each face
-    return await faceapi.detectSingleFace(img).withFaceExpressions().withFaceLandmarks().withFaceDescriptor();
-}
-
 const maxDescriptorDistance = 0.5;
 
 export async function createMatcher(faceProfile) {
