@@ -1,6 +1,6 @@
 import * as faceapi from 'face-api.js';
 
-export const labels = ["femke","frank","lowie","nancy","olivia","sam","simonne","waldek"];
+export const labels = ["femke", "frank", "lowie", "nancy", "olivia", "sam", "simonne", "waldek"];
 
 // Load models and weights
 export async function loadModels() {
@@ -17,13 +17,11 @@ export async function getFullFaceDescription(blob) {
 
     // detect all faces and generate full description from image
     // including landmark and descriptor of each face
-    let fullDesc = await faceapi
+    return await faceapi
         .detectAllFaces(img)
         .withFaceExpressions()
         .withFaceLandmarks()
         .withFaceDescriptors();
-
-    return fullDesc;
 }
 
 export async function getSingleFaceDescription(blob) {
@@ -32,12 +30,11 @@ export async function getSingleFaceDescription(blob) {
 
     // detect all faces and generate full description from image
     // including landmark and descriptor of each face
-    let descriptor = await faceapi.detectSingleFace(img).withFaceExpressions().withFaceLandmarks().withFaceDescriptor();
-
-    return descriptor;
+    return await faceapi.detectSingleFace(img).withFaceExpressions().withFaceLandmarks().withFaceDescriptor();
 }
 
 const maxDescriptorDistance = 0.5;
+
 export async function createMatcher(faceProfile) {
     // Create labeled descriptors of member from profile
     let members = Object.keys(faceProfile);
@@ -52,9 +49,8 @@ export async function createMatcher(faceProfile) {
     );
 
     // Create face matcher (maximum descriptor distance is 0.5)
-    let faceMatcher = new faceapi.FaceMatcher(
+    return new faceapi.FaceMatcher(
         labeledDescriptors,
         maxDescriptorDistance
     );
-    return faceMatcher;
 }

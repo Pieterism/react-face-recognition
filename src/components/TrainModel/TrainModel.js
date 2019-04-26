@@ -1,14 +1,13 @@
 import React, {Component} from 'react';
 import Dropzone from 'react-dropzone';
-import {getFullFaceDescription, loadModels, labels} from '../../api/face';
+import {getFullFaceDescription, loadModels, labels, sortImagesByClass} from '../../api/face';
 import './TrainModel.css'
-import {restElement} from "@babel/types";
 
 export default class TrainModel extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            images: []
+
         };
     }
 
@@ -25,7 +24,12 @@ export default class TrainModel extends Component {
             })
         });
         console.log(res);
+
+        let filtered = res.filter(image => image.label === labels[1])
+        console.log(filtered);
     };
+
+
 
     asyncForEach = async (array, callback) => {
         for (let index = 0; index < array.length; index++) {
@@ -34,17 +38,7 @@ export default class TrainModel extends Component {
     };
 
     onDrop = async (acceptedFiles) => {
-        this.readInTrainingData(acceptedFiles);
-
-        /*let result = [];
-        await acceptedFiles.forEach(async __filename => {
-            this.handleImage(__filename).then(res => {
-                result.push(res);
-
-            }).then(res => {
-                console.log(result);
-            })
-        })*/
+        this.readInTrainingData(acceptedFiles).then();
     };
 
     handleImage = async (__filename) => {
