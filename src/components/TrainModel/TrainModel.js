@@ -1,16 +1,18 @@
 import React, {Component} from 'react';
 import Dropzone from 'react-dropzone';
-import {getFullFaceDescription, loadModels, labels} from '../../api/face';
+import {getFullFaceDescription, loadModels, createMatcher, labels} from '../../api/face';
 import './TrainModel.css'
 import {withRouter} from "react-router-dom";
+import EventEmitter from 'EventEmitter';
 
 class TrainModel extends Component {
     constructor(props) {
         super(props);
-        this.state = {};
+        this.faceMatcher = {};
     }
 
     componentWillMount = async () => {
+        this.eventEmitter = new EventEmitter();
         await loadModels().then(res => console.log('Models loaded'))
     };
 
@@ -30,38 +32,32 @@ class TrainModel extends Component {
         );
 
         let classifiedData = await this.classifyImages(imagesByClass);
-        await this.exportJSON(classifiedData);
+        console.log("data learned...");
+
+        await createMatcher(classifiedData);
+
 
         this.setState({
-            data: classifiedData
+            faceMatcher: classifiedData
         })
 
-        console.log(classifiedData);
+        this.props.callback(classifiedData);
     };
-
-
-
-
 
     classifyImages = async (imagesByClass) => {
         let data = [];
         imagesByClass.forEach(labelClass => {
             let imageDescr = {
                 name: labelClass[0].label,
-                descriptor: []
+                descriptors: []
             };
             labelClass.forEach(item => {
-                imageDescr.descriptor.push(item.descriptor)
+                imageDescr.descriptors.push(parseFloat(item.descriptor));
             });
             data.push(imageDescr);
         });
         console.log("Data analyzed...");
         return data;
-    };
-
-    exportJSON = async (classifiedImages) => {
-
-        console.log("data learned...")
     };
 
     asyncForEach = async (array, callback) => {

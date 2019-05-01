@@ -2,9 +2,6 @@ import React, {Component} from 'react';
 import {withRouter} from 'react-router-dom';
 import {loadModels, getFullFaceDescription, createMatcher} from '../../api/face';
 
-// Import face profile
-const JSON_PROFILE = require('../../descriptors/faces.json');
-
 // Initial State
 const INIT_STATE = {
     imageURL: "https://cdn4.iconfinder.com/data/icons/social-communication/142/add_photo-512.png",
@@ -20,10 +17,8 @@ class ImageInput extends Component {
         this.state = {...INIT_STATE, faceMatcher: null};
     }
 
-
     componentWillMount = async () => {
         await loadModels();
-        this.setState({faceMatcher: await createMatcher(JSON_PROFILE)});
         await this.handleImage(this.state.imageURL);
     };
 
@@ -46,8 +41,15 @@ class ImageInput extends Component {
         }
     };
 
+    createFaceMatcher = async() => {
+         await this.setState({faceMatcher: await createMatcher(this.props.faceProfiles)});
+         console.log('FaceMatcher created.')
+
+    }
+
     handleFileChange = async event => {
         this.resetState();
+        await this.createFaceMatcher();
         await this.setState({
             imageURL: URL.createObjectURL(event.target.files[0]),
             loading: true
