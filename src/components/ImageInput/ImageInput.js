@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {withRouter} from 'react-router-dom';
-import {loadModels, getFullFaceDescription, createMatcher} from '../../api/face';
+import {loadModels, getFullFaceDescription} from '../../api/face';
 
 // Initial State
 const INIT_STATE = {
@@ -43,12 +43,12 @@ class ImageInput extends Component {
 
     handleFileChange = async event => {
         this.resetState();
-        await this.createFaceMatcher();
         await this.setState({
             imageURL: URL.createObjectURL(event.target.files[0]),
-            loading: true
+            loading: true,
+            faceMatcher: this.props.faceMatcher
         });
-        this.handleImage();
+        await this.handleImage();
     };
 
     resetState = () => {

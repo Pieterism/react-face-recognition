@@ -8,12 +8,12 @@ import TrainModel from "../TrainModel/TrainModel";
 export default class Home extends Component {
     constructor(props) {
         super(props);
-        this.state = {faceProfiles: null};
+        this.state = {faceMatcher: null};
     }
 
-    callback = (classifiedData) =>
+    callback = (faceMatcher) =>
         this.setState( prevState => ( {
-            faceProfiles: classifiedData,
+            faceMatcher: faceMatcher,
         } ) );
 
     render() {
@@ -22,7 +22,7 @@ export default class Home extends Component {
                 <h1>React Face Recognition</h1>
                 <NavPills/>
                 <div className="tab-content">
-                    <ImageInput faceProfiles={this.state.faceProfiles} />
+                    <ImageInput faceMatcher={this.state.faceMatcher} />
                     <VideoInput/>
                     <TrainModel callback={this.callback.bind(this)}/>
                 </div>

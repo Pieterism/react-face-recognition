@@ -1,5 +1,4 @@
 import * as faceapi from 'face-api.js';
-import {objectExpression} from "@babel/types";
 
 export const labels = ["femke", "frank", "lowie", "nancy", "olivia", "sam", "simonne", "waldek"];
 
@@ -40,21 +39,22 @@ export async function getSingleFaceDescription(blob) {
 const maxDescriptorDistance = 0.5;
 
 export async function createMatcher(faceProfiles) {
-    console.log('CREATE FACE MATCHER');
-    console.log(faceProfiles);
+    console.log('Creating face matcher...');
 
-    faceProfiles.forEach(async faceProfile => {
+    const labeledFaceDescriptors = [];
+
+    await faceProfiles.forEach(async faceProfile => {
         const descriptors = [];
         for (let i = 0; i < faceProfile.descriptors.length; i++) {
             descriptors.push(faceProfile.descriptors[i])
         }
         const labeledDescriptor = await new faceapi.LabeledFaceDescriptors(faceProfile.name, descriptors)
-    })
-
+        labeledFaceDescriptors.push(labeledDescriptor);
+    });
 
     // Create face matcher (maximum descriptor distance is 0.5)
-    /*    return new faceapi.FaceMatcher(
-            fullFaceDescription,
-            maxDescriptorDistance
-        );*/
+    return new faceapi.FaceMatcher(
+        labeledFaceDescriptors,
+        maxDescriptorDistance
+    );
 }

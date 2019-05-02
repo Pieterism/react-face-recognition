@@ -35,6 +35,7 @@ class TrainModel extends Component {
         console.log("data learned...");
 
         const faceMatcher = await createMatcher(classifiedData);
+        console.log("FaceMatcher created");
 
         this.setState({
             faceMatcher: faceMatcher
@@ -45,7 +46,6 @@ class TrainModel extends Component {
 
     classifyImages = async (imagesByClass) => {
         let data = [];
-        console.log(imagesByClass);
         imagesByClass.forEach(labelClass => {
             let imageDescr = {
                 name: labelClass[0].label,
