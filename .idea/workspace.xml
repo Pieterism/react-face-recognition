@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70f69837-e0f6-46da-bc9c-695bb51e5b24" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/face.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/face.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ImageInput/ImageInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ImageInput/ImageInput.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TrainModel/TrainModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TrainModel/TrainModel.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -53,10 +48,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/TrainModel/TrainModel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="110" column="5" lean-forward="true" selection-start-line="110" selection-start-column="5" selection-end-line="110" selection-end-column="5" />
+            <state relative-caret-position="312">
+              <caret line="72" column="48" selection-start-line="72" selection-start-column="48" selection-end-line="72" selection-end-column="48" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
+                <element signature="e#618#1334#0" />
                 <element signature="e#1383#1810#0" />
                 <element signature="e#1859#1993#0" />
                 <element signature="e#2034#2096#0" />
@@ -70,9 +66,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/api/face.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
+            <state relative-caret-position="442">
+              <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
               <folding>
+                <element signature="e#0#39#0" expanded="true" />
                 <element signature="n#!!block;n#loadModels#0" />
                 <element signature="n#!!block;n#getFullFaceDescription#0" />
                 <element signature="n#!!block;n#getFullFaceDescription#1" />
@@ -268,12 +265,12 @@
       <workItem from="1556123652343" duration="725000" />
       <workItem from="1556130220196" duration="13652000" />
       <workItem from="1556216137366" duration="30809000" />
-      <workItem from="1556697580035" duration="35640000" />
+      <workItem from="1556697580035" duration="37960000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103875000" />
+    <option name="totallyTimeSpent" value="106195000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -458,10 +455,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/TrainModel/TrainModel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="110" column="5" lean-forward="true" selection-start-line="110" selection-start-column="5" selection-end-line="110" selection-end-column="5" />
+        <state relative-caret-position="312">
+          <caret line="72" column="48" selection-start-line="72" selection-start-column="48" selection-end-line="72" selection-end-column="48" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#618#1334#0" />
             <element signature="e#1383#1810#0" />
             <element signature="e#1859#1993#0" />
             <element signature="e#2034#2096#0" />
@@ -473,9 +471,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/api/face.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
+        <state relative-caret-position="442">
+          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
           <folding>
+            <element signature="e#0#39#0" expanded="true" />
             <element signature="n#!!block;n#loadModels#0" />
             <element signature="n#!!block;n#getFullFaceDescription#0" />
             <element signature="n#!!block;n#getFullFaceDescription#1" />
