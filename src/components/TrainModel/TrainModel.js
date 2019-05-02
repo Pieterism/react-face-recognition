@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Dropzone from 'react-dropzone';
-import {getFullFaceDescription, loadModels, createMatcher, labels} from '../../api/face';
+import {loadModels, createMatcher, labels, getSingleFaceDescription} from '../../api/face';
 import './TrainModel.css'
 import {withRouter} from "react-router-dom";
 import EventEmitter from 'EventEmitter';
@@ -20,7 +20,7 @@ class TrainModel extends Component {
         let res = [];
         console.log("Uploading training data...")
         await this.asyncForEach(acceptedFiles, async (file) => {
-            await this.handleImage(file).then(result => {
+            await this.handleTrainingImage(file).then(result => {
                 res.push(result);
             })
         });
@@ -34,25 +34,25 @@ class TrainModel extends Component {
         let classifiedData = await this.classifyImages(imagesByClass);
         console.log("data learned...");
 
-        await createMatcher(classifiedData);
-
+        const faceMatcher = await createMatcher(classifiedData);
 
         this.setState({
-            faceMatcher: classifiedData
+            faceMatcher: faceMatcher
         })
 
-        this.props.callback(classifiedData);
+        this.props.callback(faceMatcher);
     };
 
     classifyImages = async (imagesByClass) => {
         let data = [];
+        console.log(imagesByClass);
         imagesByClass.forEach(labelClass => {
             let imageDescr = {
                 name: labelClass[0].label,
                 descriptors: []
             };
             labelClass.forEach(item => {
-                imageDescr.descriptors.push(parseFloat(item.descriptor));
+                imageDescr.descriptors.push(item.descriptor);
             });
             data.push(imageDescr);
         });
@@ -70,14 +70,14 @@ class TrainModel extends Component {
         this.readInTrainingData(acceptedFiles).then();
     };
 
-    handleImage = async (__filename) => {
+    handleTrainingImage = async (__filename) => {
         let image = null;
         let imageURL = URL.createObjectURL(__filename);
-        await getFullFaceDescription(imageURL).then(fullDesc => {
+        await getSingleFaceDescription(imageURL).then(fullDesc => {
             if (!!fullDesc) {
                 for (const label of labels) {
                     if (__filename.name.includes(label)) {
-                        image = {label: (label), descriptor: (fullDesc.map(fd => fd.descriptor))};
+                        image = {label: (label), descriptor: (fullDesc.descriptor)};
                     }
                 }
             }

@@ -41,12 +41,6 @@ class ImageInput extends Component {
         }
     };
 
-    createFaceMatcher = async() => {
-         await this.setState({faceMatcher: await createMatcher(this.props.faceProfiles)});
-         console.log('FaceMatcher created.')
-
-    }
-
     handleFileChange = async event => {
         this.resetState();
         await this.createFaceMatcher();
@@ -106,19 +100,19 @@ class ImageInput extends Component {
 
         return (
             <div id="image-input" className="tab-pane fade text-center">
-                    <input
-                        id="myFileUpload"
-                        type="file"
-                        onChange={this.handleFileChange}
-                        accept=".jpg, .jpeg, .png"
-                    />
-                    <div style={{position: 'relative'}}>
-                        <div style={{position: 'absolute'}}>
-                            <img src={imageURL} alt="imageURL"/>
-                        </div>
-                        {!!drawBox ? drawBox : null}
+                <input
+                    id="myFileUpload"
+                    type="file"
+                    onChange={this.handleFileChange}
+                    accept=".jpg, .jpeg, .png"
+                />
+                <div style={{position: 'relative'}}>
+                    <div style={{position: 'absolute'}}>
+                        <img src={imageURL} alt="imageURL"/>
                     </div>
+                    {!!drawBox ? drawBox : null}
                 </div>
+            </div>
         );
     }
 }

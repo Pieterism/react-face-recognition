@@ -24,24 +24,27 @@ export async function getFullFaceDescription(blob) {
         .withFaceDescriptors();
 }
 
+export async function getSingleFaceDescription(blob) {
+    // fetch image to api
+    let img = await faceapi.fetchImage(blob);
+
+    // detect all faces and generate full description from image
+    // including landmark and descriptor of each face
+    return await faceapi
+        .detectSingleFace(img)
+        .withFaceLandmarks()
+        .withFaceDescriptor();
+}
+
 const maxDescriptorDistance = 0.5;
 
 export async function createMatcher(faceProfiles) {
-
     console.log('CREATE FACE MATCHER');
-    console.log(faceProfiles)
+    console.log(faceProfiles);
 
-    let labeledDescriptors = [];
-
-    
-
-/*    faceProfiles.forEach(faceProfile =>{
-        labeledDescriptors.push( new faceapi.LabeledFaceDescriptors(faceProfile.name, faceProfile.descriptor))
-    })
-
-   // Create face matcher (maximum descriptor distance is 0.5)
-    return new faceapi.FaceMatcher(
-        labeledDescriptors
-    );
-    */
+    // Create face matcher (maximum descriptor distance is 0.5)
+/*    return new faceapi.FaceMatcher(
+        fullFaceDescription,
+        maxDescriptorDistance
+    );*/
 }
