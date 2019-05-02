@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70f69837-e0f6-46da-bc9c-695bb51e5b24" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/api/face.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/face.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ImageInput/ImageInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ImageInput/ImageInput.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/TrainModel/TrainModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TrainModel/TrainModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/Images/Simonne/simonne8.png" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,7 +28,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/ImageInput/ImageInput.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
@@ -48,36 +46,33 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/TrainModel/TrainModel.js">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/api/face.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="46" column="46" selection-start-line="46" selection-start-column="46" selection-end-line="46" selection-end-column="46" />
+            <state relative-caret-position="34">
+              <caret line="2" column="56" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="56" />
               <folding>
-                <element signature="e#0#39#0" expanded="true" />
-                <element signature="n#!!block;n#constructor#0;n#TrainModel#0" />
-                <element signature="e#441#565#0" />
-                <element signature="e#618#1334#0" />
-                <element signature="e#1383#1810#0" />
-                <element signature="e#1859#1993#0" />
-                <element signature="e#2034#2096#0" />
-                <element signature="e#2139#2616#0" />
-                <element signature="n#!!block;n#render#0;n#TrainModel#0" />
+                <element signature="n#!!block;n#loadModels#0" />
+                <element signature="n#!!block;n#getFullFaceDescription#0" />
+                <element signature="n#!!block;n#createMatcher#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/api/face.js">
+        <entry file="file://$PROJECT_DIR$/src/components/TrainModel/TrainModel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="272">
+              <caret line="28" column="44" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="44" />
               <folding>
-                <element signature="n#!!block;n#loadModels#0" />
-                <element signature="n#!!block;n#getFullFaceDescription#0" />
-                <element signature="n#!!block;n#getFullFaceDescription#1" />
-                <element signature="n#!!block;n#createMatcher#0" />
+                <element signature="e#0#39#0" expanded="true" />
+                <element signature="n#!!block;n#constructor#0;n#TrainModel#0" />
+                <element signature="e#441#565#0" />
+                <element signature="e#1859#1993#0" />
+                <element signature="e#2034#2096#0" />
+                <element signature="e#2139#2616#0" />
+                <element signature="n#!!block;n#render#0;n#TrainModel#0" />
               </folding>
             </state>
           </provider>
@@ -130,8 +125,8 @@
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/components/Home/Home.js" />
         <option value="$PROJECT_DIR$/src/api/face.js" />
-        <option value="$PROJECT_DIR$/src/components/TrainModel/TrainModel.js" />
         <option value="$PROJECT_DIR$/src/components/ImageInput/ImageInput.js" />
+        <option value="$PROJECT_DIR$/src/components/TrainModel/TrainModel.js" />
       </list>
     </option>
   </component>
@@ -270,12 +265,12 @@
       <workItem from="1556123652343" duration="725000" />
       <workItem from="1556130220196" duration="13652000" />
       <workItem from="1556216137366" duration="30809000" />
-      <workItem from="1556697580035" duration="39293000" />
+      <workItem from="1556697580035" duration="40320000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107528000" />
+    <option name="totallyTimeSpent" value="108555000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -442,37 +437,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/api/face.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="n#!!block;n#loadModels#0" />
-            <element signature="n#!!block;n#getFullFaceDescription#0" />
-            <element signature="n#!!block;n#getFullFaceDescription#1" />
-            <element signature="n#!!block;n#createMatcher#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/TrainModel/TrainModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="46" column="46" selection-start-line="46" selection-start-column="46" selection-end-line="46" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-            <element signature="n#!!block;n#constructor#0;n#TrainModel#0" />
-            <element signature="e#441#565#0" />
-            <element signature="e#618#1334#0" />
-            <element signature="e#1383#1810#0" />
-            <element signature="e#1859#1993#0" />
-            <element signature="e#2034#2096#0" />
-            <element signature="e#2139#2616#0" />
-            <element signature="n#!!block;n#render#0;n#TrainModel#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ImageInput/ImageInput.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -485,6 +449,34 @@
             <element signature="e#723#1330#0" />
             <element signature="e#1552#1788#0" />
             <element signature="e#1814#1861#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/TrainModel/TrainModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="28" column="44" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <element signature="n#!!block;n#constructor#0;n#TrainModel#0" />
+            <element signature="e#441#565#0" />
+            <element signature="e#1859#1993#0" />
+            <element signature="e#2034#2096#0" />
+            <element signature="e#2139#2616#0" />
+            <element signature="n#!!block;n#render#0;n#TrainModel#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/api/face.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="56" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="56" />
+          <folding>
+            <element signature="n#!!block;n#loadModels#0" />
+            <element signature="n#!!block;n#getFullFaceDescription#0" />
+            <element signature="n#!!block;n#createMatcher#0" />
           </folding>
         </state>
       </provider>
