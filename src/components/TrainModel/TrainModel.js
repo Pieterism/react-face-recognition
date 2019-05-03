@@ -4,12 +4,18 @@ import {loadModels, createMatcher, labels, getSingleFaceDescription} from '../..
 import './TrainModel.css'
 import {withRouter} from "react-router-dom";
 import EventEmitter from 'EventEmitter';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+toast.configure()
 
 class TrainModel extends Component {
     constructor(props) {
         super(props);
         this.faceMatcher = {};
     }
+
+    notify = () => toast.info("Data is trained, ready for face recognition");
 
     componentWillMount = async () => {
         this.eventEmitter = new EventEmitter();
@@ -38,6 +44,9 @@ class TrainModel extends Component {
 
         const faceMatcher = await createMatcher(classifiedData);
         console.log("FaceMatcher created");
+
+        //TODO: insert toaster message to notify training is complete
+        this.notify()
 
         this.setState({
             faceMatcher: faceMatcher

@@ -23,7 +23,7 @@ export default class Home extends Component {
                 <NavPills/>
                 <div className="tab-content">
                     <ImageInput faceMatcher={this.state.faceMatcher} />
-                    <VideoInput/>
+                    <VideoInput faceMatcher={this.state.faceMatcher}/>
                     <TrainModel callback={this.callback.bind(this)}/>
                 </div>
             </div>

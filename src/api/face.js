@@ -55,6 +55,5 @@ export async function createMatcher(faceProfiles) {
     // Create face matcher (maximum descriptor distance is 0.5)
     return new faceapi.FaceMatcher(
         labeledFaceDescriptors,
-        maxDescriptorDistance
     );
 }
