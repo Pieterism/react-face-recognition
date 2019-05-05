@@ -48,15 +48,16 @@ class VideoInput extends Component {
         const internalPlayer = this.state.internalPlayer;
 
         //handle image
-        await this.handleVideoFrame(internalPlayer);
+        await this.handleVideoFrame(this.player.getInternalPlayer());
 
     };
 
     handleVideoFrame = async (internalPlayer) => {
-        setInterval( async function () {
+        setInterval(async function () {
+
             console.log(internalPlayer)
-        },3000)
-    }
+        }, 1000)
+    };
 
     resetState = () => {
         this.setState({...INIT_STATE});
@@ -89,7 +90,6 @@ class VideoInput extends Component {
                                 }
                             }
                         }}
-
                     />
                 </div>
             </div>

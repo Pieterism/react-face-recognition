@@ -27,11 +27,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/VideoInput/VideoInput.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="58" column="5" lean-forward="true" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+            <state relative-caret-position="162">
+              <caret line="52" column="6" lean-forward="true" selection-start-line="52" selection-start-column="6" selection-end-line="52" selection-end-column="6" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
+                <element signature="e#238#516#0" />
                 <element signature="e#550#691#0" />
+                <element signature="e#1036#1249#0" />
+                <element signature="e#1480#1563#0" />
               </folding>
             </state>
           </provider>
@@ -304,12 +307,12 @@
       <workItem from="1556130220196" duration="13652000" />
       <workItem from="1556216137366" duration="30809000" />
       <workItem from="1556697580035" duration="40320000" />
-      <workItem from="1556872765390" duration="28245000" />
+      <workItem from="1556872765390" duration="29753000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136800000" />
+    <option name="totallyTimeSpent" value="138308000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -536,11 +539,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/VideoInput/VideoInput.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="58" column="5" lean-forward="true" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+        <state relative-caret-position="162">
+          <caret line="52" column="6" lean-forward="true" selection-start-line="52" selection-start-column="6" selection-end-line="52" selection-end-column="6" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#238#516#0" />
             <element signature="e#550#691#0" />
+            <element signature="e#1036#1249#0" />
+            <element signature="e#1480#1563#0" />
           </folding>
         </state>
       </provider>
