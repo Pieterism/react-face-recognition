@@ -28,7 +28,8 @@ class VideoInput extends Component {
             frame: null,
             internalPlayer: null
         };
-        this.reactPlayerRef = React.createRef();
+        this.handleFileChange = this.handleFileChange.bind(this);
+        this.handleVideoFrame = this.handleVideoFrame.bind(this);
     }
 
     componentWillMount = async () => {
@@ -43,22 +44,22 @@ class VideoInput extends Component {
             faceMatcher: this.props.faceMatcher,
             internalPlayer: this.player.getInternalPlayer()
         });
+
+        const internalPlayer = this.state.internalPlayer;
+
+        //handle image
+        await this.handleVideoFrame(internalPlayer);
+
     };
 
-    resetState =  () => {
+    handleVideoFrame = async (internalPlayer) => {
+        setInterval( function () {
+            console.log(internalPlayer)
+        },3000)
+    }
+
+    resetState = () => {
         this.setState({...INIT_STATE});
-    };
-
-    //capture screenshot every second.
-    handleVideo = async () => {
-        setInterval(async function () {
-            this.setState({
-                internalPlayer: this.player.getInternalPlayer()
-            })
-            console.log("captured image");
-            console.log(this.state.internalPlayer)
-            //this.setState({frame: frame.dataUri})
-        }, 5000);
     };
 
     render() {
