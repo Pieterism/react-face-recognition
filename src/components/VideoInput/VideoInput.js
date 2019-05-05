@@ -53,7 +53,7 @@ class VideoInput extends Component {
     };
 
     handleVideoFrame = async (internalPlayer) => {
-        setInterval( function () {
+        setInterval( async function () {
             console.log(internalPlayer)
         },3000)
     }
