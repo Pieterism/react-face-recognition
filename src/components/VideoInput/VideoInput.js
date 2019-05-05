@@ -3,12 +3,12 @@ import {withRouter} from 'react-router-dom';
 import {loadModels} from '../../api/face';
 import ReactPlayer from "react-player";
 import './VideoInput.css'
-import 'capture-video-frame';
+const captureFrame = require('capture-frame')
 
 
 // Initial State
 const INIT_STATE = {
-    videoURL: 'https://www.youtube.com/watch?v=LrsBYF073VQ&t=3s',
+    videoURL: '',
     fullDesc: null,
     detections: null,
     descriptors: null,
@@ -24,10 +24,11 @@ class VideoInput extends Component {
             descriptors: null,
             faceMatcher: null,
             match: null,
-            videoURL: 'https://www.youtube.com/watch?v=LrsBYF073VQ&t=3s',
+            videoURL: '',
             frame: null,
             internalPlayer: null
         };
+        this.reactPlayerRef = React.createRef();
         this.handleFileChange = this.handleFileChange.bind(this);
         this.handleVideoFrame = this.handleVideoFrame.bind(this);
     }
@@ -54,9 +55,12 @@ class VideoInput extends Component {
 
     handleVideoFrame = async (internalPlayer) => {
         setInterval(async function () {
-
-            console.log(internalPlayer)
-        }, 1000)
+            //TODO: Capture frame and convert to image to analyse
+            const buf = captureFrame(internalPlayer);
+            const image = document.createElement('img')
+            image.src = window.URL.createObjectURL(new window.Blob([buf]));
+            document.body.appendChild(image)
+        }, 500)
     };
 
     resetState = () => {
@@ -80,6 +84,7 @@ class VideoInput extends Component {
                         width='100%'
                         height='100%'
                         controls={true}
+                        playing = {true}
                         ref={player => {
                             this.player = player
                         }}
