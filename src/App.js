@@ -15,8 +15,8 @@ class App extends Component {
                 <Router history={createHistory()}>
                     <div className=" route container-fluid text-center">
                         <Route exact path="/" component={Home}/>
-                        <Route exact path="/image" component={ImageInput} />
-                        <Route exact path="/train" component={TrainModel} />
+                        <Route exact path="/image" component={ImageInput}/>
+                        <Route exact path="/train" component={TrainModel}/>
                     </div>
                 </Router>
             </div>

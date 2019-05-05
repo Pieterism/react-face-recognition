@@ -12,9 +12,9 @@ export default class Home extends Component {
     }
 
     callback = (faceMatcher) =>
-        this.setState( prevState => ( {
+        this.setState(prevState => ({
             faceMatcher: faceMatcher,
-        } ) );
+        }));
 
     render() {
         return (
@@ -22,7 +22,7 @@ export default class Home extends Component {
                 <h1>React Face Recognition</h1>
                 <NavPills/>
                 <div className="tab-content">
-                    <ImageInput faceMatcher={this.state.faceMatcher} />
+                    <ImageInput faceMatcher={this.state.faceMatcher}/>
                     <VideoInput faceMatcher={this.state.faceMatcher}/>
                     <TrainModel callback={this.callback.bind(this)}/>
                 </div>

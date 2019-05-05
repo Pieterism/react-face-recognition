@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70f69837-e0f6-46da-bc9c-695bb51e5b24" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/VideoInput/VideoInput.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/VideoInput/example.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/face.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/face.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/TrainModel/TrainModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TrainModel/TrainModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/VideoInput/VideoInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/VideoInput/VideoInput.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,13 +24,58 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Home/Home.js">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/VideoInput/VideoInput.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+            <state relative-caret-position="249">
+              <caret line="45" column="4" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
+                <element signature="e#238#516#0" />
+                <element signature="e#550#691#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/VideoInput/example.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/VideoInput/VideoInput.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/ImageInput/ImageInput.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1615">
+              <caret line="112" column="28" selection-start-line="112" selection-start-column="28" selection-end-line="112" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+                <element signature="e#708#1315#0" />
               </folding>
             </state>
           </provider>
@@ -35,33 +84,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/api/face.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="41" column="44" selection-start-line="41" selection-start-column="44" selection-end-line="41" selection-end-column="44" />
+            <state relative-caret-position="68">
+              <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
               <folding>
-                <element signature="n#!!block;n#loadModels#0" />
                 <element signature="n#!!block;n#getFullFaceDescription#0" />
+                <element signature="n#!!block;n#createMatcher#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/VideoInput/VideoInput.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/TrainModel/TrainModel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+            <state relative-caret-position="51">
+              <caret line="3" column="2" selection-start-line="3" selection-end-line="4" />
               <folding>
-                <element signature="e#0#39#0" expanded="true" />
                 <element signature="n#!!block;n#constructor#0;n#TrainModel#0" />
+                <element signature="e#2249#2714#0" />
                 <element signature="n#!!block;n#render#0;n#TrainModel#0" />
               </folding>
             </state>
@@ -71,7 +111,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
+            <state relative-caret-position="329">
               <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
@@ -85,14 +125,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>fore</find>
+      <find>capture</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -108,15 +149,17 @@
         <option value="$PROJECT_DIR$/src/utils/readData.js" />
         <option value="$PROJECT_DIR$/src/api/readData.js" />
         <option value="$PROJECT_DIR$/src/descriptors/faces.json" />
-        <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/components/NavPills/NavPills.js" />
         <option value="$PROJECT_DIR$/src/components/TrainModel/TrainModel.css" />
-        <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/components/ImageInput/ImageInput.js" />
-        <option value="$PROJECT_DIR$/src/api/face.js" />
         <option value="$PROJECT_DIR$/src/components/Home/Home.js" />
-        <option value="$PROJECT_DIR$/src/components/VideoInput/VideoInput.js" />
         <option value="$PROJECT_DIR$/src/components/TrainModel/TrainModel.js" />
+        <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/components/VideoInput/VideoInput.css" />
+        <option value="$PROJECT_DIR$/src/api/face.js" />
+        <option value="$PROJECT_DIR$/src/components/VideoInput/example.js" />
+        <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/src/components/VideoInput/VideoInput.js" />
       </list>
     </option>
   </component>
@@ -153,6 +196,20 @@
               <item name="react-face-recognition" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-face-recognition" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-face-recognition" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Home" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-face-recognition" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-face-recognition" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="ImageInput" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="react-face-recognition" type="b2602c69:ProjectViewProjectNode" />
@@ -249,12 +306,12 @@
       <workItem from="1556130220196" duration="13652000" />
       <workItem from="1556216137366" duration="30809000" />
       <workItem from="1556697580035" duration="40320000" />
-      <workItem from="1556872765390" duration="7559000" />
+      <workItem from="1556872765390" duration="25041000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116114000" />
+    <option name="totallyTimeSpent" value="133596000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -269,7 +326,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14210178" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14210178" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -283,7 +340,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Inspection Results" order="9" weight="0.3286119" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49306014" visible="true" weight="0.22521247" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49306014" visible="true" weight="0.22521247" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50363517" side_tool="true" weight="0.32577905" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -351,13 +408,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/favicon.ico" />
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="55" selection-start-line="18" selection-start-column="55" selection-end-line="18" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -406,9 +456,16 @@
         <state relative-caret-position="-1581" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home/Home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-45">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="329">
           <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
@@ -416,54 +473,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/api/face.js">
+    <entry file="file://$PROJECT_DIR$/src/components/VideoInput/VideoInput.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="41" column="44" selection-start-line="41" selection-start-column="44" selection-end-line="41" selection-end-column="44" />
-          <folding>
-            <element signature="n#!!block;n#loadModels#0" />
-            <element signature="n#!!block;n#getFullFaceDescription#0" />
-          </folding>
+        <state relative-caret-position="153">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ImageInput/ImageInput.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="48" column="47" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="47" />
+        <state relative-caret-position="1615">
+          <caret line="112" column="28" selection-start-line="112" selection-start-column="28" selection-end-line="112" selection-end-column="28" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <element signature="n#!!block;n#constructor#0;n#ImageInput#0" />
             <element signature="e#708#1315#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/Home.js">
+    <entry file="file://$PROJECT_DIR$/src/components/TrainModel/TrainModel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+        <state relative-caret-position="51">
+          <caret line="3" column="2" selection-start-line="3" selection-end-line="4" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="n#!!block;n#constructor#0;n#TrainModel#0" />
+            <element signature="e#2249#2714#0" />
+            <element signature="n#!!block;n#render#0;n#TrainModel#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/api/face.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+          <folding>
+            <element signature="n#!!block;n#getFullFaceDescription#0" />
+            <element signature="n#!!block;n#createMatcher#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/VideoInput/example.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/VideoInput/VideoInput.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/TrainModel/TrainModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+        <state relative-caret-position="249">
+          <caret line="45" column="4" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <element signature="n#!!block;n#constructor#0;n#TrainModel#0" />
-            <element signature="n#!!block;n#render#0;n#TrainModel#0" />
+            <element signature="e#238#516#0" />
+            <element signature="e#550#691#0" />
           </folding>
         </state>
       </provider>
