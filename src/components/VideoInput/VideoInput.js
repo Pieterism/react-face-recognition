@@ -60,7 +60,7 @@ class VideoInput extends Component {
         this.interval = setInterval(() => {
             //TODO: analyze image frames
             this.analyseImageFrame();
-        }, 2000)
+        }, 1000)
     };
 
 
@@ -140,28 +140,29 @@ class VideoInput extends Component {
                     accept=".mp4, .webm, .wav"
                 />
                 <div className='player-wrapper'>
-                    {!!drawBox ? drawBox : null}
-                    <ReactPlayer
-                        className='react-player'
-                        url={this.state.videoURL}
-                        width='100%'
-                        height='100%'
-                        controls={true}
-                        playing={true}
-                        ref={player => {
-                            this.player = player
-                        }}
-                        config={{
-                            file: {
-                                attributes: {
-                                    crossOrigin: 'anonymous'
-                                }
-                            }
-                        }}
-                    >
-
-                    </ReactPlayer>
-
+                    <div style={{position: 'relative'}}>
+                        <div style={{position: 'absolute'}}>
+                            <ReactPlayer
+                                className='react-player'
+                                url={this.state.videoURL}
+                                width='100%'
+                                height='100%'
+                                controls={true}
+                                playing={true}
+                                ref={player => {
+                                    this.player = player
+                                }}
+                                config={{
+                                    file: {
+                                        attributes: {
+                                            crossOrigin: 'anonymous'
+                                        }
+                                    }
+                                }}
+                            />
+                        </div>
+                        {!!drawBox ? drawBox : null}
+                    </div>
                 </div>
             </div>
         );
