@@ -23,29 +23,6 @@ class VideoInput extends Component {
         };
     }
 
-    capture = async () => {
-        if (!!this.webcam.current) {
-            await getFullFaceDescription(
-                this.webcam.current.getScreenshot(),
-                inputSize
-            ).then(fullDesc => {
-                if (!!fullDesc) {
-                    this.setState({
-                        detections: fullDesc.map(fd => fd.detection),
-                        descriptors: fullDesc.map(fd => fd.descriptor)
-                    });
-                }
-            });
-
-            if (!!this.state.descriptors && !!this.state.faceMatcher) {
-                let match = await this.state.descriptors.map(descriptor =>
-                    this.state.faceMatcher.findBestMatch(descriptor)
-                );
-                this.setState({match});
-            }
-        }
-    };
-
     render() {
         const {detections, match, facingMode} = this.state;
         let videoConstraints = null;

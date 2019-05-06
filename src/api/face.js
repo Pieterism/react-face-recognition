@@ -5,7 +5,6 @@ export const labels = ["femke", "frank", "lowie", "nancy", "olivia", "sam", "sim
 // Load models and weights
 export async function loadModels() {
     const MODEL_URL = process.env.PUBLIC_URL + '/models';
-    await faceapi.loadMtcnnModel(MODEL_URL)
     await faceapi.loadFaceDetectionModel(MODEL_URL);
     await faceapi.loadFaceLandmarkModel(MODEL_URL);
     await faceapi.loadFaceRecognitionModel(MODEL_URL);

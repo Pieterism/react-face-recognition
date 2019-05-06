@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import {withRouter} from 'react-router-dom';
-import {loadModels} from '../../api/face';
+import {getFullFaceDescription, loadModels} from '../../api/face';
 import ReactPlayer from "react-player";
 import './VideoInput.css'
-const captureFrame = require('capture-frame')
 
+const captureFrame = require('capture-frame');
 
 // Initial State
 const INIT_STATE = {
@@ -30,12 +30,17 @@ class VideoInput extends Component {
         };
         this.reactPlayerRef = React.createRef();
         this.handleFileChange = this.handleFileChange.bind(this);
-        this.handleVideoFrame = this.handleVideoFrame.bind(this);
+        this.handleVideo = this.handleVideo.bind(this);
+        this.analyseImageFrame = this.analyseImageFrame.bind(this);
     }
 
     componentWillMount = async () => {
         await loadModels();
     };
+
+    componentWillUnmount() {
+        clearInterval(this.interval);
+    }
 
     handleFileChange = async event => {
         this.resetState();
@@ -46,21 +51,39 @@ class VideoInput extends Component {
             internalPlayer: this.player.getInternalPlayer()
         });
 
-        const internalPlayer = this.state.internalPlayer;
-
         //handle image
-        await this.handleVideoFrame(this.player.getInternalPlayer());
+        await this.handleVideo();
 
     };
 
-    handleVideoFrame = async (internalPlayer) => {
-        setInterval(async function () {
-            //TODO: Capture frame and convert to image to analyse
-            const buf = captureFrame(internalPlayer);
-            const image = document.createElement('img')
-            image.src = window.URL.createObjectURL(new window.Blob([buf]));
-            document.body.appendChild(image)
-        }, 500)
+    handleVideo = async () => {
+        this.interval = setInterval(() => {
+            //TODO: analyze image frames
+            this.analyseImageFrame();
+        }, 2000)
+    };
+
+
+    analyseImageFrame = async () => {
+        const buf = captureFrame(this.player.getInternalPlayer());
+        const image = document.createElement('img');
+        image.src = window.URL.createObjectURL(new window.Blob([buf], {type: 'image/png'}));
+        await getFullFaceDescription(image.src).then(fullDesc => {
+            if (!!fullDesc) {
+                this.setState({
+                    fullDesc,
+                    detections: fullDesc.map(fd => fd.detection),
+                    descriptors: fullDesc.map(fd => fd.descriptor)
+                });
+            }
+        });
+
+        if (!!this.state.descriptors && !!this.state.faceMatcher) {
+            let match = await this.state.descriptors.map(descriptor =>
+                this.state.faceMatcher.findBestMatch(descriptor)
+            );
+            this.setState({match});
+        }
     };
 
     resetState = () => {
@@ -68,6 +91,46 @@ class VideoInput extends Component {
     };
 
     render() {
+        const {detections, match} = this.state;
+        let drawBox = null;
+        if (!!detections) {
+            drawBox = detections.map((detection, i) => {
+                let _H = detection.box.height;
+                let _W = detection.box.width;
+                let _X = detection.box._x;
+                let _Y = detection.box._y;
+                return (
+                    <div key={i}>
+                        <div
+                            style={{
+                                position: 'absolute',
+                                border: 'solid',
+                                borderColor: 'blue',
+                                height: _H,
+                                width: _W,
+                                transform: `translate(${_X}px,${_Y}px)`
+                            }}
+                        >
+                            {!!match && !!match[i] ? (
+                                <p
+                                    style={{
+                                        backgroundColor: 'blue',
+                                        border: 'solid',
+                                        borderColor: 'blue',
+                                        width: _W,
+                                        marginTop: 0,
+                                        color: '#fff',
+                                        transform: `translate(-3px,${_H}px)`
+                                    }}
+                                >
+                                    {match[i]._label}
+                                </p>
+                            ) : null}
+                        </div>
+                    </div>
+                );
+            });
+        }
         return (
             <div id="video-input" className="tab-pane fade">
                 <input
@@ -76,15 +139,15 @@ class VideoInput extends Component {
                     onChange={this.handleFileChange}
                     accept=".mp4, .webm, .wav"
                 />
-
                 <div className='player-wrapper'>
+                    {!!drawBox ? drawBox : null}
                     <ReactPlayer
                         className='react-player'
                         url={this.state.videoURL}
                         width='100%'
                         height='100%'
                         controls={true}
-                        playing = {true}
+                        playing={true}
                         ref={player => {
                             this.player = player
                         }}
@@ -95,7 +158,10 @@ class VideoInput extends Component {
                                 }
                             }
                         }}
-                    />
+                    >
+
+                    </ReactPlayer>
+
                 </div>
             </div>
         );
