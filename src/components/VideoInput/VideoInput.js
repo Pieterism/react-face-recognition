@@ -57,12 +57,10 @@ class VideoInput extends Component {
     };
 
     handleVideo = async () => {
-        this.interval = setInterval(() => {
-            //TODO: analyze image frames
-            this.analyseImageFrame();
-        }, 1000)
+        this.interval = setInterval(async () => {
+            await this.analyseImageFrame();
+        }, 1500)
     };
-
 
     analyseImageFrame = async () => {
         const buf = captureFrame(this.player.getInternalPlayer());

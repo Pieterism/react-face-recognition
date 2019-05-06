@@ -30,6 +30,7 @@ class TrainModel extends Component {
                 res.push(result);
             })
         });
+
         console.log("Data received...");
 
         let imagesByClass = labels.map(label =>

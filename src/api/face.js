@@ -6,6 +6,9 @@ export const labels = ["femke", "frank", "lowie", "nancy", "olivia", "sam", "sim
 export async function loadModels() {
     const MODEL_URL = process.env.PUBLIC_URL + '/models';
     await faceapi.loadFaceDetectionModel(MODEL_URL);
+    await faceapi.loadMtcnnModel(MODEL_URL);
+    await faceapi.loadTinyFaceDetectorModel(MODEL_URL);
+    await faceapi.loadFaceLandmarkTinyModel(MODEL_URL);
     await faceapi.loadFaceLandmarkModel(MODEL_URL);
     await faceapi.loadFaceRecognitionModel(MODEL_URL);
     await faceapi.loadFaceExpressionModel(MODEL_URL);
@@ -34,6 +37,10 @@ export async function getSingleFaceDescription(blob) {
         .detectSingleFace(img)
         .withFaceLandmarks()
         .withFaceDescriptor();
+}
+
+export async function getFastFullFaceDescription(blob) {
+
 }
 
 export async function createMatcher(faceProfiles) {
