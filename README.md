@@ -1,4 +1,4 @@
-#React Face Recognition
+# React Face Recognition
 
 React application that supports face recognition on images and video. 
 Contains some data of belgian actors from Thuis television series. 
