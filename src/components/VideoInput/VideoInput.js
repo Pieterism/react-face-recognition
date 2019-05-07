@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {withRouter} from 'react-router-dom';
-import {getFullFaceDescription, loadModels} from '../../api/face';
+import {getTinyFullFaceDescription, loadModels} from '../../api/face';
 import ReactPlayer from "react-player";
 import './VideoInput.css'
 
@@ -59,14 +59,14 @@ class VideoInput extends Component {
     handleVideo = async () => {
         this.interval = setInterval(async () => {
             await this.analyseImageFrame();
-        }, 1500)
+        }, 500)
     };
 
     analyseImageFrame = async () => {
         const buf = captureFrame(this.player.getInternalPlayer());
         const image = document.createElement('img');
         image.src = window.URL.createObjectURL(new window.Blob([buf], {type: 'image/png'}));
-        await getFullFaceDescription(image.src).then(fullDesc => {
+        await getTinyFullFaceDescription(image.src).then(fullDesc => {
             if (!!fullDesc) {
                 this.setState({
                     fullDesc,
@@ -90,6 +90,7 @@ class VideoInput extends Component {
 
     render() {
         const {detections, match} = this.state;
+
         let drawBox = null;
         if (!!detections) {
             drawBox = detections.map((detection, i) => {

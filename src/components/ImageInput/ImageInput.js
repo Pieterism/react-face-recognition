@@ -8,6 +8,7 @@ const INIT_STATE = {
     fullDesc: null,
     detections: null,
     descriptors: null,
+    expressions: null,
     match: null
 };
 
@@ -28,7 +29,8 @@ class ImageInput extends Component {
                 this.setState({
                     fullDesc,
                     detections: fullDesc.map(fd => fd.detection),
-                    descriptors: fullDesc.map(fd => fd.descriptor)
+                    descriptors: fullDesc.map(fd => fd.descriptor),
+                    expressions: fullDesc.map(fd => fd.expressions)
                 });
             }
         });
@@ -55,8 +57,25 @@ class ImageInput extends Component {
         this.setState({...INIT_STATE});
     };
 
+
     render() {
-        const {imageURL, detections, match} = this.state;
+        const {imageURL, detections, expressions, match} = this.state;
+
+        let emotionsBox = null;
+        if (!!expressions) {
+            emotionsBox = expressions.map((expression, i) => {
+                let emotions = [];
+                Object.entries(expression).map(([key, value], i) => {
+                    emotions.push(value);
+                });
+                return (
+                    <div key={i}>
+                        {emotions.map(emotion => <p
+                            key={emotion.expression}> {emotion.expression}: {(emotion.probability * 100).toFixed(2)}%</p>)}
+                    </div>
+                )
+            })
+        }
 
         let drawBox = null;
         if (!!detections) {
@@ -78,19 +97,20 @@ class ImageInput extends Component {
                             }}
                         >
                             {!!match ? (
-                                <p
+                                <div
                                     style={{
                                         backgroundColor: 'blue',
                                         border: 'solid',
                                         borderColor: 'blue',
-                                        width: _W,
+                                        width: 'inherit',
                                         marginTop: 0,
                                         color: '#fff',
                                         transform: `translate(-3px,${_H}px)`
                                     }}
                                 >
-                                    {match[i]._label}
-                                </p>
+                                    <p>{match[i]._label}</p>
+                                    {emotionsBox[i]}
+                                </div>
                             ) : null}
                         </div>
                     </div>

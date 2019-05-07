@@ -39,8 +39,25 @@ export async function getSingleFaceDescription(blob) {
         .withFaceDescriptor();
 }
 
-export async function getFastFullFaceDescription(blob) {
+//TODO: faster face detection using tiny model
+export async function getTinyFullFaceDescription(blob) {
+    // fetch image to api
+    let img = await faceapi.fetchImage(blob);
 
+    return await faceapi
+        .detectAllFaces(img, new faceapi.TinyFaceDetectorOptions())
+        .withFaceLandmarks(true)
+        .withFaceDescriptors()
+}
+
+export async function getMtcnnFullFaceDescription(blob) {
+    // fetch image to api
+    let img = await faceapi.fetchImage(blob);
+
+    return await faceapi
+        .detectAllFaces(img, new faceapi.MtcnnOptions())
+        .withFaceLandmarks()
+        .withFaceDescriptors()
 }
 
 export async function createMatcher(faceProfiles) {

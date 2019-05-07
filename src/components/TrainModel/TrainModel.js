@@ -38,8 +38,6 @@ class TrainModel extends Component {
                 .filter(image => image.label === label)
         );
 
-        console.log(imagesByClass)
-
         let classifiedData = await this.classifyImages(imagesByClass);
         console.log("data learned...");
 
