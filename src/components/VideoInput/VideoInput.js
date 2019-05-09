@@ -122,7 +122,7 @@ class VideoInput extends Component {
                                         transform: `translate(-3px,${_H}px)`
                                     }}
                                 >
-                                    {match[i]._label}
+                                    <b>{match[i]._label}</b>
                                 </p>
                             ) : null}
                         </div>

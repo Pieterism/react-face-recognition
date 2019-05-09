@@ -108,7 +108,7 @@ class ImageInput extends Component {
                                         transform: `translate(-3px,${_H}px)`
                                     }}
                                 >
-                                    <p>{match[i]._label}</p>
+                                    <p><b>{match[i]._label}</b></p>
                                     {emotionsBox[i]}
                                 </div>
                             ) : null}
